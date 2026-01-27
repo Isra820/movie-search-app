@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 Movie Time</h1>
+        <nav>
+            <button id="home-btn">Home</button>
+            <button id="favorites-btn">Favorites</button>
+        </nav>
+    </header>
+    
+    <section id="search-section">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for a movie..." aria-label="Search movie" required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="status-section"></section>
+
+    <main>
+        <section id="movies-container"></section>
+    </main>
+
+    <div id="movie-modal" hidden>
+        <div class="modal-content">
+            <button id="close-modal-btn" aria-label="Close details">✖</button>
+             <div id="movie-details"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Movie Time. All rights reserved.</p>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
